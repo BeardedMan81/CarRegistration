@@ -1,0 +1,11 @@
+<h1 id="tableLabel">Demo</h1>
+<nav>
+  <a routerLink="/">Cars</a> | <a routerLink="/registration">Registration Status</a>
+</nav>
+
+<p>This component demonstrates fetching data from the server.</p>
+<router-outlet></router-outlet>
+
+
+
+<p *ngIf="!cars"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>

@@ -1,0 +1,20 @@
+<h1>Cars</h1>
+<p *ngIf="!cars"><em>Loading... Please refresh once the ASP.NET backend has started.</em></p>
+<table>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Registration</th>
+      <th>Registration Expiry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of cars">
+      <td>{{ car.make }}</td>
+      <td>{{ car.model }}</td>
+      <td>{{ car.registration }}</td>
+      <td>{{ car.registrationExpiry | date }}</td>
+    </tr>
+  </tbody>
+</table>
